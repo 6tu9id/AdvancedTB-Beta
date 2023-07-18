@@ -1,0 +1,211 @@
+<html>
+  <head><style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu";
+
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(55,55,55,55),rgba(55,55,55,55)),url();
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #232323;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #232323;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition:0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:center;
+  color: #ffffff;
+}
+
+.content h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.content h2{
+  
+  animation: slideMe 0.7s ease-in
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button{
+  width: 200px;
+  padding: 15 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  border: 5px solid #232323;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  position:relative;
+  overflow: hidden;
+  transition: 0.8s;
+  animation: slideMe 0.7s ease-in 
+}
+
+button:hover{
+  box-shadow: 0 5px 50px 0 #26457a inset, 0 5px 50px 0 #26457a,0 5px 50px 0 #26457a inset, 0 5px 50px 0 #26457a;
+
+}
+
+button::before{
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: #232323;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+button::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em #26457a;
+  opacity: 0;
+  background-color:#26457a;
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+@keyframes slideMe{
+  0%{
+    transform: skewX(53deg) translateX(-500px);
+  }
+  60%{
+    transform: translateX(0px);
+  }
+  62%{
+    transform: skewX(0deg) translateX(30px);
+  }
+  
+  70%{
+    transform: skew(-20deg);
+    opacity: 1;
+  }
+  
+  80%{
+    transform: skew(0deg) translate(0);
+  }
+  
+  90%{
+    transform: skew(-5deg);
+  }
+  
+  100%{
+    transform: skew(0deg);
+  }
+  
+}</style>
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+    <link>
+  </head>
+  <body>
+    <img url("https://cdn.glitch.global/ca642c38-084d-4b3e-974b-d4e8ba5ac09a/stars.jpg?v=1689564572181")length="100"width="100">
+    <div class="banner">
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">about abyss</a></li>
+        </ul>
+      </div>
+      
+      <div class="content">
+        <h1>
+          Advanced Tab Cloaker v2.1 + Abyss
+        </h1>
+        <h2>
+        </h2>
+        <p>
+          Made By 6tu9id#0001(The owner of pr0xyos)dm me on discord if you have any questions check "About" for more details
+        </p>
+        <div>
+          <a onclick="MyWindow1()"><button type="button"><span></span>Load</button></a>
+          <a href="https://sites.google.com/k12.friscoisd.org/newpr0xyos/TB/about" targer="_blank">
+            <button type="button"><span></span>Website(Pr0xyOs)</button>
+          <a href="https://sites.google.com/k12.friscoisd.org/advancedtb-update-log/l" targer="_blank">
+            <button type="button"><span></span>UpdateLog</button>
+            
+        </div>
+      </div>
+      
+      
+    </div>
+  </body>
+</html>
+
+
+
+
+<script>
+  
+function MyWindow1() {
+  var myWindow1 = window.open('', 'myWindow1', 'scrollbars=1,height='+screen.availHeight+',width='+screen.availWidth);
+  myWindow1.document.write('<!DOCTYPE html>\n\
+<title>Google</title>\n\
+<p><iframe src="https://strangepleasingcpu.dudes123.repl.co/" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%">\n\
+<script>\n\
+alert("");\n\
+<\x2fscript>');
+  location.replace("https://google.com");
+}
+</script>
